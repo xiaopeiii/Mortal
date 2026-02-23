@@ -11,6 +11,7 @@ Run ACH+RVR with this fixed pipeline:
 Then evaluate strength against old value-based / old policy-based checkpoints with reproducible commands.
 
 This document does not change algorithm/loss. It is only runbook + evaluation protocol.
+Method background references: [1], [2].
 
 ## 2) One-Time Prep
 
@@ -230,5 +231,11 @@ Store each run with columns:
 1. Offline two-stage (`teacher`, `student`) requires `strict.enabled=false`.
 2. Online strict requires new trace fields and strict alignment pass.
 3. Old logs without strict fields are for offline/non-strict only.
+
+## 11) References
+
+[1] Jinqiu Li, Shuang Wu, Haobo Fu, Qiang Fu, Enmin Zhao, and Junliang Xing. "Speedup Training Artificial Intelligence for Mahjong via Reward Variance Reduction." 2022.
+
+[2] Haobo Fu, Weiming Liu, Shuang Wu, Yijia Wang, Tao Yang, Kai Li, Junliang Xing, Bin Li, Bo Ma, Qiang Fu, and Wei Yang. "Actor-Critic Policy Optimization in a Large-Scale Imperfect-Information Game." *International Conference on Learning Representations (ICLR)*, 2022.
 
 
